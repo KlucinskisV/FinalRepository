@@ -1,0 +1,152 @@
+.filter {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter label, span{
+  font-weight: var(--weight-medium);
+  font-size: 20px;
+  line-height: 130%; 
+  letter-spacing: 0.06px;
+}
+
+.filter_price{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter_checkbox{
+  margin-right: 85px;
+  display: flex;
+  align-items: baseline;
+}
+
+.filter_checkbox_wrapper {
+  margin-top: 1px;
+  margin-bottom: 12px;
+  padding-top: 8px;
+  padding-left: 40px; 
+
+  display: block;
+  position: relative;
+        
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.filter_checkbox_wrapper input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 4px;
+  right: -60px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  border-radius: 7px;
+}
+.checkmark:hover{
+  border: none;
+  box-shadow: 0 0 0 2px var(--color-primary); 
+}
+
+.filter_checkbox_wrapper input:checked ~ .checkmark {
+  background-color: var(--color-primary);
+    border:none;
+}
+
+.checkmark:after {
+  position: absolute;
+  content: "";  
+  display: none;
+}
+
+.filter_checkbox_wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.filter_checkbox_wrapper .checkmark:after {
+  left: 18px;
+  top: 11px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0; 
+  transform: rotate(45deg);
+}
+
+.filter_sort {
+  margin-left: 35px;
+  min-width: 219px;
+	display: flex;
+	align-items: center;
+  gap: 35px;
+}
+
+.without_discount{
+  margin-left: 50px;
+}
+
+.sort_wrapper {
+	height: 40px;
+
+	font-size: 16px;
+  font-weight: var(--weight-normal);
+	letter-spacing: 0.03em;
+    
+	border: 1px solid var(--color-black);
+	border-radius: 7px;
+
+	transition: var(--transition);
+}
+.sort_wrapper:hover{
+  border: none;
+  box-shadow: 0 0 0 2px var(--color-primary); 
+}
+
+@media (max-width: 1190px) {
+  .filter_sort {
+    margin-left: 0;
+  }  
+}
+
+@media (max-width: 768px) {
+  .filter {
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+  }
+  .filter_price{
+    gap: 15px;
+    align-items: center;
+  }
+  .filter_checkbox_wrapper{
+    padding-left: 0; 
+  }
+}
+
+@media (max-width: 360px) {
+  .filter_sort {
+    gap: 10px;
+  }
+  .sort_wrapper {
+    font-size: 14px;
+  }
+
+  .filter label, span{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .filter label, span{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+.scroll_btn {
+  position: fixed;
+  z-index: 3;
+  bottom: 40px;
+  right: 10px;
+}
+
+
+.scroll_icon {
+  font-size: 40px;
+  color: var(--color-primary);
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.scroll_icon:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
+

@@ -1,0 +1,9 @@
+.products_list {
+  margin: 80px 30px 30px;
+}
+
+.products_page_title {
+  margin-bottom: 80px;
+  font-weight: var(--weight-bold);
+  font-size: 40px;
+}
