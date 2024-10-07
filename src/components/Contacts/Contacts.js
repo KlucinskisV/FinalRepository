@@ -22,7 +22,7 @@ function Contacts() {
                             </NavLink>
                         </div>
                         <div className={styles.whatsapp}>
-                            <NavLink to='https://WA.ME/+49125487992' target='_blank'>
+                            <NavLink to='https://WA.ME/+4900000000' target='_blank'>
                                 <img src={iconWhatsApp} className={styles.soc_media_icon} alt='whatsApp'></img>
                                 <p>WhatsApp</p>
                             </NavLink>

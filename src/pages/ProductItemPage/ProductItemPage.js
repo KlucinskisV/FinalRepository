@@ -38,9 +38,9 @@ function ProductItemPage() {
         <div className={styles.product_info_details}>
           <div className={styles.price_wrapper}>
             <p className={styles.discount_price}>{
-              discont_price !== null ? discont_price : price}<span>$</span></p>
+              discont_price !== null ? discont_price : price}<span>€</span></p>
             {
-              discont_price && <p className={styles.product_price}>{price}$</p>
+              discont_price && <p className={styles.product_price}>{price}€</p>
             }
             {
               discont_price && <p className={styles.discount_value}>-{discount_value}%</p>

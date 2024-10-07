@@ -12,7 +12,7 @@ import { useState } from 'react';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import FooterV2 from './components/Footer/FooterV2/FooterV2';
-
+import ContactUs from './pages/Contact-us/Contact-us'
 
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <Route path='/sales' element ={<ProductsPage type={'sale'} />}/>
 
           <Route path='/cart' element ={<ShoppingCartPage />}/>
-              
+          <Route path='/contact-us' element ={<ContactUs />}/>  
           <Route path="*" element ={<NotFoundPage />}/>  
         </Routes> 
       <Footer /> 

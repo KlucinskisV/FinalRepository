@@ -1,4 +1,5 @@
 import { Link } from '@mui/material'
+
 import React from 'react'
 
 const FooterLink = ({ text }) => {
@@ -12,7 +13,7 @@ const FooterLink = ({ text }) => {
       fontWeight: '400',
       textDecoration: 'none',
       color: '#414141',
-      textTransform: 'capitalize',
+      textTransform: 'Uppercase',
       "&:hover": {
         color: '#1c2859',
       }

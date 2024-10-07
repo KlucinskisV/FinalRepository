@@ -25,10 +25,10 @@ function ProductItem({ product }) {
                             onClick={handleAddToCart} /> 
                 </div>
                 <div className={styles.product_price_list}>
-                    <p className={styles.discont_price} >{discont_price !== null ? discont_price : price}$</p>
+                    <p className={styles.discont_price} >{discont_price !== null ? discont_price : price}€</p>
                     
                     {
-                        discont_price && <p className={styles.price}>{price}$</p>
+                        discont_price && <p className={styles.price}>{price}€</p>
                     }
                     {
                         discont_price && <p className={styles.discount_value}>-{discount_value}%</p>

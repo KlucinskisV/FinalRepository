@@ -49,7 +49,7 @@ function Order() {
         <h2 className={styles.order_title}>Order details</h2>
           <div className={styles.order_total}>
             <p className={styles.order_text}>Total</p>
-            <p className={styles.order_total_sum}>{total_order}<span> $</span></p>
+            <p className={styles.order_total_sum}>{total_order}<span> €</span></p>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div>

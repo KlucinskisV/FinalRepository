@@ -51,14 +51,13 @@ const Footer = () => {
       
       <StackColumn>
         <FooterTitle text={'our services'} />
-        <FooterLink text={'buy item'} />
-        <FooterLink text={'sell items'} />
-        <FooterLink text={'rent items'} />
-        <FooterLink text={'build items'} />
+        <div><Link to='/products'><FooterLink text={'buy item'} /></Link></div>
+        <div><Link to='/sales'><FooterLink text={'sales items'} /></Link></div>
+        <div><Link to='/contact-us'><FooterLink text={'rent items'} /></Link></div>
       </StackColumn>
       <StackColumn>
         <FooterTitle text={'our company'} />
-        <FooterLink text={'reporting'} href='/contact-us' />
+        <div><Link to='/contact-us'><FooterLink text={'reporting'} /></Link></div>
         <FooterLink text={'get in touch'} />
         <FooterLink text={'management'} />
       </StackColumn>
@@ -71,7 +70,7 @@ const Footer = () => {
         maxWidth='100%'
         justifyContent='space-between'
         >
-          <Link href="/categories" variant="body2" 
+          <Link to='https://www.instagram.com'  variant="body2" 
           sx={{
             color: '#414141',
             "&:hover": {
@@ -81,7 +80,7 @@ const Footer = () => {
           >
             <InstagramIcon />  
           </Link> 
-          <Link href="/categories"variant="body2" 
+          <Link  to='https://www.facebook.com' variant="body2" 
           sx={{
             color: '#414141',
             "&:hover": {

@@ -3,7 +3,9 @@ import Input from '../UI/Input/Input'
 import styles from './Filter.module.css'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'
-import { filterProductsByPrice, filterProductsBySale, sortProductsByDefault, sortProductsByPriceAsc, sortProductsByPriceDesc, sortProductsByTitleA, sortProductsByTitleZ } from '../../store/reducers/productListSlice'
+import { filterProductsByPrice, filterProductsBySale, 
+  sortProductsByDefault, sortProductsByPriceAsc, 
+  sortProductsByPriceDesc, sortProductsByTitleA, sortProductsByTitleZ } from '../../store/reducers/productListSlice'
 
 
   function Filter({ type, defined_style, ...otherProps }) {

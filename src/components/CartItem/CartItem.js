@@ -22,9 +22,9 @@ function CartItem ({ id, title, image, count, discont_price, price }) {
                     <button onClick={() => dispatch(incrCount(id))}>+</button>
                 </div>
             </div>
-            <h2 className={styles.item_discount_price}>{discont_price ? discont_price : price}<span>$</span></h2>
+            <h2 className={styles.item_discount_price}>{discont_price ? discont_price : price}<span>€</span></h2>
             {
-                discont_price && <h3 className={styles.item_price}>{price}$</h3>
+                discont_price && <h3 className={styles.item_price}>{price}€</h3>
             }
             <RxCross2 className={styles.close_icon} onClick={() => dispatch(removeFromCart(id))} />
         </div>
